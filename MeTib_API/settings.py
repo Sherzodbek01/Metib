@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'corsheaders',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 REST_FRAMEWORK = {
@@ -135,6 +137,8 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+CKEDITOR_UPLOAD_PATH = 'media/content/ckeditor/'
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
